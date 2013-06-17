@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLAG_ACTIVITY_NEW_TASK" />
 
     <application
         android:name="com.codepath.apps.restclienttemplate.RestClientApp"
@@ -39,9 +40,29 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="cprest"
-                    android:scheme="oauth" />
+                    android:host="anson.com"
+                    android:scheme="http" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.codepath.apps.restclienttemplate.Welcome"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.restclienttemplate.PostTweets"
+            android:label="@string/title_activity_post_tweets" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.restclienttemplate.ListHomeTimeLineActivity"
+            android:label="@string/title_activity_list_home_time_line" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.restclienttemplate.UserView"
+            android:label="@string/title_activity_user_view" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.restclienttemplate.PostTweetActivity"
+            android:label="@string/title_activity_post_tweet" >
         </activity>
     </application>
 
